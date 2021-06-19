@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <!-- script by saepuhidayat 18/06/2021 -->
+
+    <!--
+
+                                                                 
+,---.,---.,---.,---..   .|    |   ||,--. ,---.,   .,---.--.--
+`---.|---||--- |---'|   ||    |---|||   ||---||   ||---|  |  
+    ||   ||    |    |   ||    |   |||   ||   |`---'|   |  |  
+`---'`   '`---'`    `---'`---'`   '``--' `   '  |  `   '  `  
+                                                `            
+                         
+,---.,---.,---.,---.,---.
+|---'|---'|   ||__. |---|
+|    |  \ |   ||    |   |
+`    `   ``---'`    `   '
+                         
+                                                                                          
+,---.,---.,---.,---.,---.,---.,-.-.,-.-.,---.,---.    ,---.,---.,---.||    |   /,---.,-.-.
+|---'|---'|   ||  _.|---'|---|| | || | ||--- |---'    |__. |---|`---.||    |__/ |   || | |
+|    |  \ |   ||   ||  \ |   || | || | ||    |  \     |    |   |    |||    |  \ |   || | |
+`    `   ``---'`---'`   ``   '` ' '` ' '`---'`   `    `    `   '`---'``---'`   ``---'` ' '
+                                                                                          
+
+
+
+    -->
+    <meta charset="utf-8">
+    <!-- https://patorjk.com/software/taag/#p=display&f=Thin&t=PROGRAMMER%20FASILKOM -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Website Sederhana Market By Saepul Hidayat">
+    <meta name="author" content="SaepulHidayat">
+    <link rel="icon" href="images/icon.ico">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <link rel="stylesheet" href="css/animate/animate.css">
+
+    <link rel="stylesheet" href="aos/dist/aos.css">
+
+
+    <style>
+      section{
+        /* jika pake bootsrap awalnya harus pake section jika fixed-top navbarnya tambahkan padding-top 5rem*/
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+
+      hr {
+        border: none;
+        border-top: 2px solid #007BFF;
+        width: 30%;
+      }
+
+
+      .carousel-item img {
+        height: 450px;
+      }
+
+      body{
+        padding-top: 55px;
+        height: 100%;
+      }
+
+      #promo .carousel-item img {
+        height: 230px;
+      }
+
+      .body-gambar {
+        position: relative;
+        display: block;
+        background-color: transparent;
+      }
+
+      .isi-gambar {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(244, 98, 58, 0.9);
+        color: purple;
+        /*font-weight: bold;*/
+        font-size: 20px;
+        /*transition: opacity 0.25s ease;*/
+
+      }
+
+      .isi-gambar:hover {
+        opacity: 1;
+        animation: tada 2s;
+        /*animation-delay: .9s;*/
+      }
+
+      h2.judul{
+        animation: lightSpeedIn 2s;
+      }
+
+      h2.judul:hover{
+        animation: lightSpeedOut 2s;
+      }
+
+
+      #isiDonk {
+        animation: rubberBand 2s;
+      }
+
+
+
+      hr {
+        animation: fadeInUp 2s;
+      }
+
+      hr:hover {
+        animation: fadeInDown 2s;
+      }
+
+      .nav-link:hover {
+        font-weight: bold;
+        animation: jello 2s;
+      }
+
+      a.dropdown-item:hover {
+        font-weight: bold;
+        animation: bounce 2s;
+      }
+
+      .navbar-brand:hover {
+        animation: jello 2s;
+      }
+      nav.navbar {
+        background-color: transparent;
+      }
+
+      @media (max-width: 768px) {
+        nav.navbar {
+          background-color: white;
+        }
+      }
+    </style>
+
+
+
+    <title>Market By Saepul Hidayat</title>
+  </head>
+  <body id="home">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand animate__animated animate__bounce" href="#home">Saepul Hidayat</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Spesial
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#carousel">Carousel</a></li>
+                <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+                <li><a class="dropdown-item" href="#promo">Promo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#order">Free Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carousel" class="carousel slide"  data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/sosis.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption text-dark text-start fw-bold d-none d-md-block">
+            <h1>Sosis</h1>
+            <p>Tau Gak Sosis Itu Enak ?</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/mieayam.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption text-dark text-center fw-bold d-none d-md-block">
+            <h1>Mie Ayam</h1>
+            <p>Ayam Yang Di Kasih Mie, Ayam Apa Hayoh ?</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/eskrim.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption text-dark text-end fw-bold d-none d-md-block">
+            <h1>Es Cream</h1>
+            <p>Di Hari Yang Panas Enak Nya Makan Apanya ?.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+
+    <!-- gallery -->
+    <section id="gallery" style="background-color: #E9ECEF;" >
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-12 text-center pt-3 text-danger">
+            <h2 class="judul">Gallery Shop</h2>
+            <center>
+              <hr>
+            </center>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-4" >
+            <div class="card mb-4 border-primary gallery-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+              <a class="body-gambar" target="_blank" href="images/sosis.jpg">
+                <img src="images/sosis.jpg" class="card-img-top" alt="Sosis Bakar">
+                <div class="isi-gambar animated">
+                  <p>
+                    <span class="font-italic">Sosis Bakar</span>
+                    <br>
+                    <span class="text-dark font-weight-bold">Rasakan Sensai Makan Sosis Ini</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4" >
+            <div class="card mb-4 border-primary gallery-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+              <a class="body-gambar" target="_blank" href="images/mieayam.jpg">
+                <img src="images/mieayam.jpg" class="card-img-top" alt="Mie Ayam">
+                <div class="isi-gambar">
+                  <p>
+                    <span class="font-italic">Mie Ayam</span>
+                    <br>
+                    <span class="text-dark font-weight-bold">Mie Ayam Rasa Original, Mantav</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4" >
+            <div class="card mb-4 border-primary gallery-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+              <a class="body-gambar" target="_blank" href="images/eskrim.jpg">
+                <img src="images/eskrim.jpg" class="card-img-top" alt="Es Krim">
+                <div class="isi-gambar">
+                  <p>
+                    <span class="font-italic">Es Krim</span>
+                    <br>
+                    <span class="text-dark font-weight-bold">Es Krim Kayak Aneka Ragam</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4" >
+            <div class="card mb-4 border-primary gallery-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+              <a class="body-gambar" target="_blank" href="images/1.jpg">
+                <img src="images/1.jpg" class="card-img-top" alt="Mie Ayam">
+                <div class="isi-gambar">
+                  <p>
+                    <span class="font-italic">Mie Ayam</span>
+                    <br>
+                    <span class="text-dark font-weight-bold">Mie Ayam Rasa Original, Mantav</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4" >
+            <div class="card mb-4 border-primary gallery-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+              <a class="body-gambar" target="_blank" href="images/3.jpg">
+                <img src="images/3.jpg" class="card-img-top" alt="Es Krim">
+                <div class="isi-gambar">
+                  <p>
+                    <span class="font-italic">Es Krim</span>
+                    <br>
+                    <span class="text-dark font-weight-bold">Es Krim Kayak Aneka Ragam</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4" >
+            <div class="card mb-4 border-primary gallery-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+              <a class="body-gambar" target="_blank" href="images/2.jpg">
+                <img src="images/2.jpg" class="card-img-top" alt="Sosis Bakar">
+                <div class="isi-gambar animated">
+                  <p>
+                    <span class="font-italic">Sosis Bakar</span>
+                    <br>
+                    <span class="text-dark font-weight-bold">Rasakan Sensai Makan Sosis Ini</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- gallery -->
+
+    
+
+    <!-- <div class="position-relative">
+        <div class="shape overflow-hidden text-primary">
+            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div> -->
+
+    <svg style="background-color: #E9ECEF;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0D6EFD" fill-opacity="1" d="M0,224L1440,32L1440,320L0,320Z"></path></svg>
+    <section id="promo" style="background-color: #0D6EFD;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center pt-3 text-white">
+            <h2 class="judul">Dayly Promo</h2>
+            <center>
+              <hr>
+            </center>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 mb-2" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card">
+              <div class="card-header bg-info text-white">
+                Terbaru Dan Promo
+              </div>
+              <div class="card-body">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5" >
+            <div class="card bg-danger text-light" style="min-height: 150px" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+              <div class="card-header">
+                Diskon
+              </div>
+              <div class="card-body">
+                Diskon 20% Dengan Tidak Belanja Tanpa pake uang lembaran
+              </div>
+            </div>
+            <div class="card bg-warning mt-3" style="min-height: 150px" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+              <div class="card-header">
+                Cash Back
+              </div>
+              <div class="card-body">
+                Cash Back 1 buah Sosis Jika Datang Langsung Ke Tempat
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- style="background-color: #E9ECEF;" -->
+
+    <svg style="background-color: #E9ECEF;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0D6EFD" fill-opacity="1" d="M0,224L1440,32L1440,0L0,0Z"></path></svg>
+
+    <!-- style="background-color: #E9ECEF;" -->
+
+    <section id="order" style="background-color: #E9ECEF;" >
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12 text-center pt-3 text-danger">
+            <h2 class="judul">Free Order</h2>
+            <center>
+              <hr>
+            </center>
+          </div>
+        </div>
+
+
+        <div class="row">
+          
+          <div class="col-md-7 mb-3" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="card border-primary">
+              <div class="card-header bg-success text-light">
+                Forms Order
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="form-group mb-3 col-md-6">
+                      <label for="nama-depan">Nama Depan</label>
+                      <input type="text" autocomplete="off" class="form-control" placeholder="Nama Depan Anda" id="nama-depan">
+                    </div>
+                    <div class="form-group mb-3 col-md-6">
+                      <label for="nama-belakang">Nama Belakang</label>
+                      <input type="text" autocomplete="off" class="form-control" placeholder="Nama Belakang Anda" id="nama-belakang">
+                    </div>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="barang">Nama Barang </label>
+                    <select name="barang" id="barang" class="form-control">
+                      <option>Sosis Bakar</option>
+                      <option>Mie Ayam</option>
+                      <option>Es Krim</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="alamat">Alamat </label>
+                    <input type="text" autocomplete="off" class="form-control" id="alamat" placeholder="Kmp. Cipeuris RT 12/05 Ds.Sukahurip Kec.Cijambe Subang">
+                  </div>
+                  <div class="row">
+                    <div class="form-group mb-3 col-md-6">
+                      <label for="kec">Kecamatan </label>
+                      <select id="kec" class="form-control">
+                        <option value="pilih" disabled="">-- Pilih --</option>
+                        <option selected="">Cijambe</option>
+                        <option>Subang</option>
+                        <option>Cibogo</option>
+                        <option>Dawuan</option>
+                        <option>Kalijati</option>
+                        <option>Cipeundeuy</option>
+                        <option>Purwadadi</option>
+                        <option>Jalancagak</option>
+                        <option>Salagaherang</option>
+                        <option>Kasomalang</option>
+                        <option>Pagaden</option>
+                        <option>Binong</option>
+                        <option>Pamanukan</option>
+                      </select>
+
+                    </div>
+                    <div class="form-group mb-3 col-md-4">
+                      <label for="kota">Kota </label>
+                      <input type="text" autocomplete="off" class="form-control"
+                        placeholder="Kota Anda" id="kota">
+                    </div>
+                    <div class="form-group mb-3 col-md-2">
+                      <label for="kode-pos">Kode Pos</label>
+                      <input type="number" autocomplete="off" class="form-control"
+                        placeholder="Kode POS" id="kode-pos">
+                    </div>
+                  </div>
+                  <button type="button" id="pesan" class="btn btn-outline-success">Pesan</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="200">
+            <div class="overflow-auto mx-auto">
+              <table class="table table-hover table-borderless table-striped border-primary">
+                <thead>
+                  <tr class="bg-primary text-light">
+                    <th scope="col">NO</th>
+                    <th scope="col">Nama Barang</th>
+                    <th scope="col">Harga Satu</th>
+                    <th scope="col">Stock</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="">
+                    <th scope="row">1</th>
+                    <td>Sosis Bakar</td>
+                    <td>Rp. 2000</td>
+                    <td>10</td>
+                  </tr>
+                  <tr class="">
+                    <th scope="row">2</th>
+                    <td>Mie Ayam</td>
+                    <td>Rp. 5000</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Es Krim</td>
+                    <td>Rp. 4000</td>
+                    <td>13</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- style="background-color: #E9ECEF;" -->
+
+    <svg style="background-color: #E9ECEF;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#984827" fill-opacity="1" d="M0,256L0,256L62.6,256L62.6,192L125.2,192L125.2,224L187.8,224L187.8,320L250.4,320L250.4,160L313,160L313,288L375.7,288L375.7,128L438.3,128L438.3,192L500.9,192L500.9,32L563.5,32L563.5,64L626.1,64L626.1,160L688.7,160L688.7,256L751.3,256L751.3,160L813.9,160L813.9,320L876.5,320L876.5,192L939.1,192L939.1,224L1001.7,224L1001.7,256L1064.3,256L1064.3,320L1127,320L1127,96L1189.6,96L1189.6,64L1252.2,64L1252.2,96L1314.8,96L1314.8,256L1377.4,256L1377.4,192L1440,192L1440,320L1377.4,320L1377.4,320L1314.8,320L1314.8,320L1252.2,320L1252.2,320L1189.6,320L1189.6,320L1127,320L1127,320L1064.3,320L1064.3,320L1001.7,320L1001.7,320L939.1,320L939.1,320L876.5,320L876.5,320L813.9,320L813.9,320L751.3,320L751.3,320L688.7,320L688.7,320L626.1,320L626.1,320L563.5,320L563.5,320L500.9,320L500.9,320L438.3,320L438.3,320L375.7,320L375.7,320L313,320L313,320L250.4,320L250.4,320L187.8,320L187.8,320L125.2,320L125.2,320L62.6,320L62.6,320L0,320L0,320Z"></path></svg>
+
+    <section id="contact" style="background: #984827">
+      <div class="container" >
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mb-2 mt-2 text-white">
+              <h2>Contact Us</h2>
+              <center>
+                <hr>
+              </center>
+            </div>
+          </div>
+          <div class="row pb-3" >
+            <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-duration="1000">
+              <div class="card border-primary mb-3">
+                <div class="card-header bg-info text-light">
+                  Office
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>082216501151</li>
+                    <li>saepulhidayat302@email.com</li>
+                    <li>Kmp. Cipeuris RT 12/05 Desa. Sukahurip Kec. Cijambe Subang</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card border-primary" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-header bg-warning text-light">
+                  Infomation
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>Jam Kerja <b>8:00</b> - <b>15:00</b></li>
+                    <li>Hari Kerja <b>Senin</b> - <b>Sabttu</b></li>
+                    <li>Bisa <b>COD</b> jika jarak dengan kami Minimal <b>10 Meter</b></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+              <div class="card border-primary">
+                <div class="card-header bg-primary text-light">
+                  Forms Chat US
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      <div class="form-group mb-3 col-md-6">
+                        <label for="nama-depan-pesan">Nama Depan</label>
+                        <input type="text" autocomplete="off" class="form-control"
+                          placeholder="Nama Depan Anda" id="nama-depan-pesan">
+                      </div>
+                      <div class="form-group mb-3 col-md-6">
+                        <label for="nama-belakang-pesan">Nama Belakang</label>
+                        <input type="text" autocomplete="off" class="form-control"
+                          placeholder="Nama Belakang Anda" id="nama-belakang-pesan">
+                      </div>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="isi_pesan">Isi Pesan </label>
+                      <textarea class="form-control" name="isi_pesan" placeholder="Isi Pesannya"
+                        id="isi-pesan" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="button" id="kirim-pesan"
+                      class="btn btn-outline-primary">Kirim</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid" style="background: #0a0a0f">
+      <div class="row pt-4 pb-4 text-white text-center">
+        <div class="col-md-4 mb-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+          <h2>About Me</h2>
+          <p class="text-secondary">
+            Ini Hasil Tugas Akhir Sederhana Mata Kuliah HTML 5 dengan front end dan halaman login dengan segala upaya saya.
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-2" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="200">
+          <h2>Newsletter</h2>
+          <p class="text-secondary">Tetap update dengan yang terbaru</p>
+          <div class="d-flex justify-content-center">
+            <div class="input-group mb-3 w-50">
+              <input type="email" class="form-control" autocomplete="off" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <h2>Follow Me</h2>
+          <p class="text-secondary">
+            Sosial Media Saya
+          </p>
+          <a class="text-decoration-none me-2 text-white" href="" target="blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+          </a>
+
+
+          <a class="text-decoration-none me-2 text-white" href="https://intagram.com/saepulfariz" target="blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+          </a>
+
+          <a class="text-decoration-none me-2 text-white" href="mailto:saepulhidayat302@gmail.com" target="blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+            </svg>
+          </a>
+
+          <a class="text-decoration-none me-2 text-white" href="https://wa.me/6282216501151" target="blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg>
+          </a>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <footer class="bg-primary text-white text-center pb-2 pt-3" >
+      <p>Created with 
+        <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+      </svg>
+      by <a class="text-white fw-bold" href="https://instagram.com/saepulfariz" target="blank" >Saepul Hidayat</a> || PROFA ( PROFRAMMER FASILKOM )
+    </p>
+    </footer>
+
+
+    <!-- Modal Login Dan Register -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div> -->
+          <div class="modal-body">
+            <ul class="nav nav-pills mb-3 d-flex justify-content-evenly bg-warning py-3 px-4 rounded-top rounded-bottom" id="pills-tab" role="tablist" style="margin-top: -50px;">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                  Login
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                  Register
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade in show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <form action="" class="px-4">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control border-primary" placeholder="Your Email" autocomplete="off" id="email">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control border-primary" placeholder="Your Password" autocomplete="off" id="password">
+                  </div>
+
+                  <div class="text-center">
+                    <button class="btn btn-outline-primary">LOG IN</button>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade in" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <form action="" class="px-4">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control border-primary" placeholder="Your Email" autocomplete="off" id="email">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control border-primary" placeholder="Your Password" autocomplete="off" id="password">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Repeat Password</label>
+                    <input type="password" class="form-control border-primary" placeholder="Repeat Password" autocomplete="off" id="password">
+                  </div>
+
+                  <div class="text-center">
+                    <button class="btn btn-outline-primary">SIGN UP</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer text-start d-flex justify-content-center">
+            <p class="text-start">
+              Login Sederhana Dengan Modal Bootstrap ^_^
+            </p>
+            <button type="button" class="btn btn-secondary waves-effect ms-3" data-bs-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="isiDonk" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="isiDonkLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-danger">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="isiDonkLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            isi dulu bro ^_^
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- https://mdbootstrap.com/docs/b4/jquery/modals/forms/ -->
+
+
+
+    <!-- <div style="height: 1000px;">tes</div> -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      var myModal = new bootstrap.Modal(document.getElementById('isiDonk'), {
+        keyboard: false
+      })
+
+      // $('#isiDonk h5.modal-title').html('Welcome To My Website');
+      // $('#isiDonk div.modal-body').html('Selamat Datang Di Website Sederhana Ini By Saepulfariz');
+      // $('#isiDonk').modal('show');
+
+      var modal = document.querySelector('#isiDonk div.modal-body');
+      var modalTitle = document.querySelector('#isiDonk h5.modal-title');
+      var pesan = document.getElementById('pesan');
+      var kirimPesan = document.getElementById('kirim-pesan');
+
+      const nomerHp = 6282216501151;
+
+      pesan.addEventListener('click', function(){
+
+        const namaDepan = document.getElementById('nama-depan').value;
+        const namaBelakang = document.getElementById('nama-belakang').value;
+        const barang = document.getElementById('barang').value;
+        const alamat = document.getElementById('alamat').value;
+        const kec = document.getElementById('kec').value;
+        const kota = document.getElementById('kota').value;
+        const kodePos = document.getElementById('kode-pos').value;
+
+        modalTitle.innerHTML = 'Warning';
+
+        if (namaDepan === '' || namaBelakang === '') {
+          modal.innerHTML = 'Isi Nama Depan Ama Belakang Bro ^_^';
+          myModal.show();
+        } else if (barang === '') {
+          modal.innerHTML = 'Pilih Barang Nya Bro ^_^';
+          myModal.show();
+        } else if (alamat === '') {
+          modal.innerHTML = 'Isi Alamat Nya Bro ^_^';
+          myModal.show();
+        } else if (kec === 'pilih') {
+          modal.innerHTML = 'Isi Kecamatan Nya Bro ^_^';
+          myModal.show();
+        } else if (kota === '') {
+          modal.innerHTML = 'Isi Kota Nya Bro ^_^';
+          myModal.show();
+        } else if (kodePos === '') {
+          modal.innerHTML = 'Isi Kode Pos Nya Bro ^_^';
+          myModal.show();
+        } else {
+          window.location.href = 'http://api.whatsapp.com/send?phone=' + nomerHp + '&text=Nama%20Lengkap%20%3A%20' + namaDepan + ' ' + namaBelakang + '%0ABarang%20%3A%20' + barang + '%0AAlamat%20%3A%20' + alamat + '%0AKecamatan%20%3A%20' + kec + '%0AKota%20%3A%20' + kota + '%0AKode%20Pos%20%3A%20' + kodePos;
+        }
+        // http://api.whatsapp.com/send?phone=6282216501151&text=
+        // %0A baris baru
+        // %20 spasi
+        // %3A buat :
+        // %3B buat ;
+
+      })
+
+      kirimPesan.addEventListener('click', function(){
+        // myModal.show();
+        const namaDepan = document.getElementById('nama-depan-pesan').value;
+        const namaBelakang = document.getElementById('nama-belakang-pesan').value;
+        const isiPesan = document.getElementById('isi-pesan').value;
+
+        modalTitle.innerHTML = 'Warning';
+
+        if (namaDepan === '' && namaBelakang === '' && isiPesan === '') {
+          modal.innerHTML = 'Isi Donk, Malah Gak Di Isi ^_^';
+          myModal.show();
+        }else{
+          if (namaDepan === '' && namaBelakang === '') {
+            modal.innerHTML = 'Isi Nama Depan Ama Belakang Bro ^_^';
+            myModal.show();
+          }else{
+            if (isiPesan === '') {
+              modal.innerHTML = 'Isi Pesannya Bro ^_^';
+              myModal.show();
+            } else {
+              window.location.href = 'http://api.whatsapp.com/send?phone=' + nomerHp + '&text=Nama%20Lengkap%20%3A%20' + namaDepan + ' ' + namaBelakang + '%0APesan%20%3A%20' + isiPesan;
+            }
+          }
+        }
+      })
+
+      const galleryImage = document.querySelectorAll('.gallery-img');
+
+      // galleryImage.forEach((img, i) => {
+      //   img.dataset.aos = 'fade-up';
+      //   img.dataset.aosDelay = i * 100;
+      //   img.dataset.aosDuration = 1000;
+      // })
+
+
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
