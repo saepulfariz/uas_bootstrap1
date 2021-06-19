@@ -808,7 +808,9 @@
 
     <script src="aos/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true
+      });
 
       var myModal = new bootstrap.Modal(document.getElementById('isiDonk'), {
         keyboard: false
