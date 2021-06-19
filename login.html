@@ -1,0 +1,191 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <!-- script by saepuhidayat 18/06/2021 -->
+
+    <!--
+
+                                                                 
+,---.,---.,---.,---..   .|    |   ||,--. ,---.,   .,---.--.--
+`---.|---||--- |---'|   ||    |---|||   ||---||   ||---|  |  
+    ||   ||    |    |   ||    |   |||   ||   |`---'|   |  |  
+`---'`   '`---'`    `---'`---'`   '``--' `   '  |  `   '  `  
+                                                `            
+                         
+,---.,---.,---.,---.,---.
+|---'|---'|   ||__. |---|
+|    |  \ |   ||    |   |
+`    `   ``---'`    `   '
+                         
+                                                                                          
+,---.,---.,---.,---.,---.,---.,-.-.,-.-.,---.,---.    ,---.,---.,---.||    |   /,---.,-.-.
+|---'|---'|   ||  _.|---'|---|| | || | ||--- |---'    |__. |---|`---.||    |__/ |   || | |
+|    |  \ |   ||   ||  \ |   || | || | ||    |  \     |    |   |    |||    |  \ |   || | |
+`    `   ``---'`---'`   ``   '` ' '` ' '`---'`   `    `    `   '`---'``---'`   ``---'` ' '
+                                                                                          
+
+
+
+    -->
+    <meta charset="utf-8">
+    <!-- https://patorjk.com/software/taag/#p=display&f=Thin&t=PROGRAMMER%20FASILKOM -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Website Sederhana Market By Saepul Hidayat">
+    <meta name="author" content="SaepulHidayat">
+    <link rel="icon" href="images/icon.ico">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <link rel="stylesheet" href="css/animate/animate.css">
+
+    <link rel="stylesheet" href="aos/dist/aos.css">
+    <title>Login Market By Saepul Hidayat</title>
+
+    <style>
+        body{
+            background-image: url('images/2.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        #isiDonk {
+            animation: rubberBand 2s;
+        }
+
+        .gambar{
+            margin-right: 0px;
+        }
+
+        @media (max-width: 768px) {
+            .gambar{
+              margin-right: 20px;
+              /* ini ketika di buka mobile */
+            }
+        }
+    </style>
+  </head>
+  <body class="d-flex align-items-center justify-content-center">
+
+    <div class="container">
+        <div class="row justify-content-center d-flex align-items-center">
+            <!-- col-xl-10 buat di layar leptop -->
+            <div class="col-lg-12 col-xl-10 col-md-12">
+                <div class="card border-0 shadow my-5 pt-3 pb-2">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- d-none d-lg-block buat nampilkan sesuatu yang di lg dan di md,sm xs akan hilang dispaly: none -->
+                            <div class="col-lg-6 col-md-12 text-center ">
+                                <img width="70%" class="gambar" src="images/food.png" data-aos="fade-down" data-aos-duration="1000" alt="Logo Food">    
+                            </div>      
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card border border-primary shadow" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="400">
+                                    <div class="card-header bg-primary text-light">
+                                        Login Page
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="username">Username</label>
+                                                <input type="text" class="form-control" autocomplete="off" autofocus="" id="username" aria-describedby="usernameHelp">
+                                                <small id="usernameHelp" class="form-text font-italic text-danger">Username = saepulfariz, password = 123.</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control" autocomplete="off" id="password">
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="button" id="login" class="btn btn-outline-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal -->
+    <div class="modal fade" id="isiDonk" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="isiDonkLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-danger">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="isiDonkLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            isi dulu bro ^_^
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="aos/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true
+      });
+
+      var myModal = new bootstrap.Modal(document.getElementById('isiDonk'), {
+        keyboard: false
+      })
+
+      var modal = document.querySelector('#isiDonk div.modal-body');
+      var modalTitle = document.querySelector('#isiDonk h5.modal-title');
+
+
+      const login = document.getElementById('login');
+
+      login.addEventListener('click', function(){
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        modalTitle.innerHTML = 'Warning';
+
+        if (username == '' && password == '') {
+            modal.innerHTML = 'Masukkan Username Dan Passwordnya ^_^';
+        } else if (username == "saepulfariz") {
+            if (password == "123") {
+                modalTitle.innerHTML = 'Login Berhasil';
+                modal.innerHTML = 'Username Dan Password Benar ^_^';
+                myModal.show();
+                // ketika modal di close maka pindahkan ke halaman index
+                document.getElementById('isiDonk').addEventListener('hide.bs.modal', function (e) {
+                    window.location.href = 'index.html';
+                })
+            } else {
+                modal.innerHTML = 'Password Salah ^_^';
+            }
+        } else {
+            modal.innerHTML = 'Username <b class="text-danger">' + username + '</b> Salah ^_^';
+        }
+
+        myModal.show();
+
+
+      })
+    </script>
+    
+  </body>
+</html>
